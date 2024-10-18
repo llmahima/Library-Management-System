@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Sidebar from "./Sidebar";
 
 function ControlPanel() {
+  useEffect(()=>{
+    <Sidebar/>
+  },[]);
   return (
     <>
       <div className="absolute top-16 left-80">

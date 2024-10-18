@@ -11,11 +11,15 @@ import MembershipUpdate from "../components/MembershipUpdate";
 import AddItemForm from "../components/AddItemForm";
 import UpdateBook from "../components/UpdateBook";
 import UserManagement from "../components/UserManagement";
+import Login from "../components/Login"
+import Sidebar from "../components/Sidebar"
 function Routers() {
   return (
   
       <Routes>
-        <Route path="/" element={<ControlPanel />} />
+        <Route path="/" element={<Login/>}/>
+        <Route path="/sidebar" element={<Sidebar/>}/>
+        <Route path="/controlpanel" element={<ControlPanel />} />
         <Route path="/availableBook" element={<BookAvailable/>}/>
         <Route path="/bookissue" element={<BookIssue/>} />
         <Route path="/returnbook" element={<ReturnBook/>} />
